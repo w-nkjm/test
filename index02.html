@@ -4,104 +4,111 @@
     <meta charset="UTF-8">
     <title>portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/css02.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="name">BRAND</h1>
+        <h1>
+            <a href="#"><img src="logo.png"></a>
+        </h1>
+        <nav class="gnav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="gr">ABOUT</a></li>
+                <li class="nav-item"><a href="#product" class="gr">PRODUCT</a></li>
+                <li class="nav-item"><a href="#news" class="gr">NEWS</a></li>
+                <li class="nav-item"><a href="#" class="gr">ONLINESTORE</a></li>
+                <li class="nav-item"><a href="#" class="gr">CONTACT</a></li>
+            </ul>
+        </nav>
         <button type="button" class="humburger-btn">
             <span class="humburger-btn-icon"></span>
             <span class="humburger-btn-icon"></span>
             <span class="humburger-btn-icon"></span>
         </button>
-        <nav class="gnav">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#news" class="line-effect">NEWS</a></li>
-                <li class="nav-item"><a href="#concept" class="line-effect">CONCEPT</a></li>
-                <li class="nav-item"><a href="#product" class="line-effect">PRODUCT</a></li>
-                <li class="nav-item"><a href="#" class="line-effect">ONLINESTORE</a></li>
-                <li class="nav-item"><a href="#" class="line-effect">CONTACT</a></li>
-            </ul>
-        </nav>
     </header>
-    <div class="mainVew">
-        <div class="bgImg src1"></div>
-        <div class="bgImg src2"></div>
-        <div class="bgImg src3"></div>
-    </div>
-    <section id="news">
-        <h2 class="fadein">NEWS</h2>
-        <div class="sec-news fadein">
-            <a href="#" class="news-inner">
-                <p class="news-item">2020.XX.XX</p>
-                <p class="news-item">ウェブサイトがオープンしました。</p>
-                <p class="news-item news-item-icon">&raquo;</p>
-            </a>
+    <main>
+        <div class="main-vew">
+            <div class="bg-img src1"></div>
+            <div class="bg-img src2"></div>
+            <div class="bg-img src3"></div>
         </div>
-    </section>
-    <section id="concept">
-        <h2 class="fadein">CONCEPT</h2>
-        <div class="sec-concept fadein">
-            <h3>テキスト</h3>
-            <ul class="concept-inner">
-                <li>テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト</li>
-                <li>テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト</li>
-                <li>テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト</li>
-                <li>テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト　テキスト</li>
-            </ul>
-        </div>
-        <div class="sec-concept fadein">
-            <h3>TEXT</h3>
-            <ul class="concept-inner">
-                <li>text text text text text text text text text text text text text</li>
-                <li>text text text text text text text text text text text text text</li>
-                <li>text text text text text text text text text text text text text</li>
-                <li>text text text text text text text text text text text text text</li>
-            </ul>
+        <!-- <div class="main-txt">
+            <p>心と体に潤いを</p>
+        </div> -->
+    </main>
+    <section id="about">
+        <div class="about-inner fadein">
+            <h2 class="fadein">ABOUT</h2>
+            <div class="about-txt">
+                <p>やさしさと潤いで満たしたい。</p>
+                <p>mitasuはその想いから生まれました。</p>
+                <p>季節や体調によってバランスを崩しやすいデリケートな肌のために</p>
+                <p>自然由来のやさしさでクリーンな美肌へ導きます。</p>
+            </div>
         </div>
     </section>
     <section id="product">
-        <h2 class="fadein">PRODUCT</h2>
-        <div class="product-item fadein">
-            <a href="#">
-                <img src="product01.jpg" class="product-img">
-                <div class="mask">
-                    <p class="caption">AAAAA</p>
+        <div class="product-wrap">
+            <h2 class="fadein">PRODUCT</h2>
+            <div class="product-inner fadein">
+                <div class="product-item">
+                    <a href="#">
+                        <img src="skincare.jpg" class="product-img">
+                        <span class="product-name">Skin&nbsp;care</span>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="product-item fadein">
-            <a href="#"></a>
-                <img src="product02.jpg" class="product-img">
-                <div class="mask">
-                    <p class="caption">BBBBB</p>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="bodycare.jpg" class="product-img">
+                        <span class="product-name">Body&nbsp;care</span>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="product-item fadein">
-            <a href="#">
-                <img src="product03.jpg" class="product-img">
-                <div class="mask">
-                    <p class="caption">CCCCC</p>
+                <div class="product-item">
+                    <a href="#">
+                        <img src="haircare.jpg" class="product-img">
+                        <span class="product-name">Hair&nbsp;care</span>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
-        <div class="center fadein">
-            <a href="" class="line-effect">All Product</a>
-        </div>
+        <a href="#" class="btn fadein">All&nbsp;Product</a>
     </section>
-    <footer class="">
+    <section id="news">
+        <div class="news-wrap">
+            <h2 class="fadein">NEWS</h2>
+            <div class="news-inner fadein">
+                <a href="#" class="news-item gr">
+                    <p class="news-txt">2021.0４.20</p>
+                    <p class="news-txt">コラム</p>
+                </a>
+                <a href="#" class="news-item gr">
+                    <p class="news-txt">2021.04.18</p>
+                    <p class="news-txt">雑誌掲載情報</p>
+                </a>
+                <a href="#" class="news-item gr">
+                    <p class="news-txt">2021.03.28</p>
+                    <p class="news-txt">ウェブサイトがオープンしました。</p>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="btn fadein gr">Read&nbsp;more</a>
+    </section>
+    <footer>
         <nav class="fadein">
             <ul>
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#concept">CONCEPT</a></li>
-                <li><a href="#product">PRODUCT</a></li>
-                <li><a href="#">ONLINESTORE</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">COMPANY</a></li>
+                <li><a href="#about" class="gr">ABOUT</a></li>
+                <li><a href="#product" class="gr">PRODUCT</a></li>
+                <li><a href="#news" class="gr">NEWS</a></li>
+                <li><a href="#" class="gr">ONLINESTORE</a></li>
+                <li><a href="#" class="gr">CONTACT</a></li>
+                <li><a href="#" class="gr">COMPANY</a></li>
             </ul>
         </nav>
-        <small>&copy;&nbsp;2020&nbsp;nkjm</small>
+        <div class="footer-logo">
+            <img src="logo.png" art="mitasu">
+            <small>&copy;&nbsp;2021&nbsp;mitasuco&nbsp;Co&#046;&#044;Ltd&#046;All&nbsp;Rights&nbsp;Reserved&#046;</small>
+        </div>
     </footer>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="js/js02.js"></script>
